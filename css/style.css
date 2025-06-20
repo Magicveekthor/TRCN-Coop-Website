@@ -346,6 +346,7 @@ a {
   background: var(--faded-savings);
   padding: 30px 20px;
   border-radius: 7px;
+  transition: all .5s ease-in-out;
 }
 
 /* Savings */
@@ -377,11 +378,28 @@ a {
   line-height: 1.8;
 }
 
+.coop-savings:hover {
+  background: var(--savings);
+}
+
+.coop-savings:hover .coop-savings-icon {
+  background: var(--white);
+}
+
+.coop-savings:hover .coop-savings-title {
+  color: var(--white);
+}
+
+.coop-savings:hover .coop-savings-descrip {
+  color: var(--white);
+}
+
 /* Loans */
 .coop-loans {
   background: rgba(237, 28, 116, 0.03);
   padding: 30px 20px;
   border-radius: 7px;
+  transition: all .5s ease-in-out;
 }
 
 .coop-loans .coop-loans-icon {
@@ -412,11 +430,28 @@ a {
   line-height: 1.8;
 }
 
+.coop-loans:hover {
+  background: var(--loans);
+}
+
+.coop-loans:hover .coop-loans-icon {
+  background: var(--white);
+}
+
+.coop-loans:hover .coop-loans-title {
+  color: var(--white);
+}
+
+.coop-loans:hover .coop-loans-descrip {
+  color: var(--white);
+}
+
 /* Investment */
 .coop-investment {
   background: rgba(106, 13, 173, 0.03);
   padding: 30px 20px;
   border-radius: 7px;
+  transition: all .5s ease-in-out;
 }
 
 .coop-investment .coop-investment-icon {
@@ -447,11 +482,29 @@ a {
   line-height: 1.8;
 }
 
+.coop-investment:hover {
+  background: var(--investments);
+}
+
+.coop-investment:hover .coop-investment-icon {
+  background: var(--white);
+}
+
+.coop-investment:hover .coop-investment-title {
+  color: var(--white);
+}
+
+.coop-investment:hover .coop-investment-descrip {
+  color: var(--white);
+}
+
+
 /* Real Estate */
 .coop-estate {
   background: rgba(255, 120, 60, 0.03);
   padding: 30px 20px;
   border-radius: 7px;
+  transition: all .5s ease-in-out;
 }
 
 .coop-estate .coop-estate-icon {
@@ -481,6 +534,23 @@ a {
   letter-spacing: 1.2px;
   line-height: 1.8;
 }
+
+.coop-estate:hover {
+  background: var(--real-estate);
+}
+
+.coop-estate:hover .coop-estate-icon {
+  background: var(--white);
+}
+
+.coop-estate:hover .coop-estate-title {
+  color: var(--white);
+}
+
+.coop-estate:hover .coop-estate-descrip {
+  color: var(--white);
+}
+
 
 @media (max-width: 991px) {
   .coop-services .coop-services-big-text {
