@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo/TRCN_SMCS_LOGO.png">
+    <title>HOME - COOP</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- css stylesheet -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="floating-bg"></div>
+
+    <header class="header shadow-sm py-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo/TRCN_SMCS_LOGO.png" alt="trcn_staff_coop_logo" class="logo-img" />
+                </a>
+
+                <!-- Toggler (mobile) -->
+                <button
+                    class="navbar-toggler ms-auto border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent"
+                    aria-controls="navbarContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+               <!-- Collapsible content -->
+               <div class="collapse navbar-collapse" id="navbarContent">
+                   <!-- Nav links -->
+                   <ul class="navbar-nav mx-lg-auto nav-links text-center text-lg-start">
+                       <li class="nav-item">
+                           <a class="nav-link active" href="index.html">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="about-us.html">About Us</a>
+                       </li>
+
+                       <!-- Dropdown -->
+                       <li class="nav-item dropdown custom-dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Our Services
+                           </a>
+                           <div class="dropdown-menu custom-mega-menu p-4 float-slow" aria-labelledby="servicesDropdown">
+                                <div class="row gx-3 gy-4">
+                                    <div class="col-12 col-sm-6">
+                                        <a href="savings.html" class="dropdown-box savings-box">
+                                            <img src="assets/icons/savings.png" alt="savings icon" class="icon">
+                                            <div>
+                                                <h6>Savings</h6>
+                                                <p>Goal-oriented Savings</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <a href="loan.html" class="dropdown-box loans-box">
+                                            <img src="assets/icons/loans.png" alt="loans icon" class="icon">
+                                            <div>
+                                                <h6>Loans</h6>
+                                                <p>Flexible Loans</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <a href="investment.html" class="dropdown-box investment-box">
+                                            <img src="assets/icons/investment.png" alt="investment icon" class="icon">
+                                            <div>
+                                                <h6>Investments</h6>
+                                                <p>Grow your Money</p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <a href="savings.html" class="dropdown-box estate-box">
+                                            <img src="assets/icons/estate.png" alt="real-estate icon" class="icon">
+                                            <div>
+                                                <h6>Real Estate</h6>
+                                                <p>Goal-oriented Savings</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                           </div>
+                       </li>
+
+                       <li class="nav-item">
+                           <a class="nav-link" href="contact.html">Contact</a>
+                       </li>
+                   </ul>
+
+                   <!-- Right-aligned buttons -->
+                   <div class="d-flex flex-column flex-lg-row gap-3 header-btn mt-3 mt-lg-0 ms-lg-auto">
+                       <a href="#" class="btn signin-btn">Sign In</a>
+                       <a href="#" class="btn signup-btn">Get Started</a>
+                   </div>
+               </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Bootstrap-Compatible Hero Section -->
+    <section class="coop-home container py-5">
+        <div class="row align-items-center">
+            <!-- Text Content -->
+            <div class="col-lg-6 mb-4 mb-lg-0 hero-text">
+                <div class="intro-text">
+                    <h1 class="bg-text mb-4">
+                        The smarter way to<br>
+                        save, get quick funding<br>
+                        and invest without <br>
+                        tedious <strong class="bg-text-blue">PAPER WORK</strong>
+                    </h1>
+                    <p class="sm-text mb-5">
+                        TRCN Staff Multipurpose Cooperative Society is a membership society<br>
+                        run by the <strong>Teachers Registration Council of Nigeria.</strong>
+                    </p>
+                    <a href="#" class="get-started-btn mt-2">Get Started For Free</a>
+                </div>
+            </div>
+
+            <!-- Image Content -->
+            <div class="col-lg-6 text-center">
+                <div class="intro-image">
+                    <img src="assets/hero image.png" alt="trcn_staff_coop_hero" class="img-fluid float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coop-partners py-3 my-4">
+        <div class="container">
+            <div class="row d-lg-flex align-items-center">
+                <!-- Left: Text -->
+                <div class="col-lg-3 col-sm-12 px-4 partner-text mb-4 mb-lg-0">
+                    <h4 class="fw-bold">Our Partners</h4>
+                </div>
+
+                <!-- Right: Logos -->
+                <div class="col-lg-9">
+                    <div class="partner-image">
+                        <img src="assets/partners/cowry.png" alt="Cowry" class="img-fluid">
+                        <img src="assets/partners/sterling.png" alt="Sterling" class="img-fluid">
+                        <img src="assets/partners/cordros.png" alt="Cordros" class="img-fluid">
+                        <img src="assets/partners/emrald.png" alt="Emerald" class="img-fluid">
+                        <img src="assets/partners/unity.png" alt="Unity" class="img-fluid">
+                        <img src="assets/partners/first bank.png" alt="FirstBank" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coop-services my-5">
+        <div class="container">
+            <div class="row text-center my-5">
+                <div class="col-12 mb-3">
+                    <h3 class="fw-bold coop-services-big-text">
+                        The smartest way to build sustainable<br>
+                        wealth and lifestyle.
+                    </h3>
+                </div>
+
+                <div class="col-12">
+                    <p class="coop-services-small-text">
+                        Earn up to 25% returns in Investments<br>
+                        Apply for a convenient loans to meet needs<br>
+                        Create multiple savings plans<br>
+                        Plan to your home expenses
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-lg-6 col-sm-12 pt-4">
+                    <div class="coop-savings">
+                        <div class="coop-savings-icon mb-4">
+                            <img src="assets/icons/savings.png"  alt="coop-savings-icon"> 
+                        </div>
+
+                        <h4 class="coop-savings-title mb-3">Savings</h4>
+
+                        <p class="coop-savings-descrip mb-3">
+                            Savings can be much more than<br>
+                            storing money, save money on your<br> 
+                            own terms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 pt-4">
+                    <div class="coop-loans">
+                        <div class="coop-loans-icon mb-4">
+                            <img src="assets/icons/loans.png"  alt="coop-loans-icon"> 
+                        </div>
+
+                        <h3 class="coop-loans-title mb-3">Loans</h3>
+
+                        <p class="coop-loans-descrip mb-3">
+                            Our loan packages cater to all your<br> 
+                            financial needs regardless of what they<br> 
+                            may be.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 pt-4">
+                    <div class="coop-investment">
+                        <div class="coop-investment-icon mb-4">
+                            <img src="assets/icons/investment.png"  alt="coop-investment-icon"> 
+                        </div>
+
+                        <h4 class="coop-investment-title mb-3">Investments</h4>
+
+                        <p class="coop-investment-descrip mb-3">
+                            Grow your money confidently by<br>
+                            investing in pre-vetted investment<br> 
+                            opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 pt-4">
+                    <div class="coop-estate">
+                        <div class="coop-estate-icon mb-4">
+                            <img src="assets/icons/estate.png"  alt="coop-estate-icon"> 
+                        </div>
+
+                        <h3 class="coop-estate-title mb-3">Real Estate</h3>
+
+                        <p class="coop-estate-descrip mb-3">
+                            Get affordable housing and financial<br> 
+                            assistance under flexible payment<br> 
+                            plans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coop-vision my-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="coop-vision-button pt-5">
+                        <a href="#">Cooperator's Confidence</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="coop-vision-title pt-5">
+                        <h2>TRCM Coop's got your back</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="coop-vision-block speed pt-5">
+                        <div class="feature-number">01</div>
+                        <div class="feature-icon">
+                            <img src="assets/icons/speed.png" alt="Speed Icon">
+                        </div>
+                        <h4>Speed</h4>
+                        <p>We guarantee you swift access to financial services</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="coop-vision-block trust pt-5">
+                        <div class="feature-number">02</div>
+                        <div class="feature-icon">
+                            <img src="assets/icons/trust.png" alt="Speed Icon">
+                        </div>
+                        <h4>Trust</h4>
+                        <p>We are always here to support you, every step of the way</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="coop-vision-block personalized pt-5">
+                        <div class="feature-number">03</div>
+                        <div class="feature-icon">
+                            <img src="assets/icons/personalized.png" alt="Speed Icon">
+                        </div>
+                        <h4>Personalized</h4>
+                        <p>Experience tailored financial solutions designed to meet your goals</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="coop-vision-block transparency pt-5">
+                        <div class="feature-number">04</div>
+                        <div class="feature-icon">
+                            <img src="assets/icons/transparency.png" alt="Speed Icon">
+                        </div>
+                        <h4>Transparency</h4>
+                        <p>No hidden charges. We guarantee full disclosure on all your transaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coop-team my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="coop-team-title text-center pt-5">
+                        <h4>Meet the <span class="text-italic">Excos</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="coop-team-card">
+                        <div class="coop-team-image">
+                            <img src="assets/dots.png" alt="coop-dot" class="dots">
+                            <img src="assets/team/aboh.png" alt="Coop-team">
+                        </div>
+                        <h4>Jude Okere</h4>
+                        <p>President</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="coop-team-card">
+                        <div class="coop-team-image">
+                            <img src="assets/dots.png" alt="coop-dot" class="dots">
+                            <img src="assets/team/alex.png" alt="Coop-team">
+                        </div>
+                        <h4>Ayeni Onem</h4>
+                        <p>Vice President</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="coop-team-card">
+                        <div class="coop-team-image">
+                            <img src="assets/dots.png" alt="coop-dot" class="dots">
+                            <img src="assets/team/ayeni.png" alt="Coop-team">
+                        </div>
+                        <h4>Aboh Otse</h4>
+                        <p>General Secretary</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="coop-team-card">
+                        <div class="coop-team-image">
+                            <img src="assets/dots.png" alt="coop-dot" class="dots">
+                            <img src="assets/team/jude.png" alt="Coop-team">
+                        </div>
+                        <h4>Alexander Ngaddah</h4>
+                        <p>Public Relation Officer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="team-btn">View All</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coop-coa">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-6 col-sm-12">
+                    <h4 class="mb-3">
+                        Track your finances<br>
+                        in real time
+                    </h4>
+                    <p class="text-white">
+                        Get real-time updates on your finances,<br>
+                        transaction and total balance.
+                    </p>
+
+                    <div class="coop-coa-list text-white">
+                        <span><i class="fa-regular fa-circle-check"></i> Track your monthly deductions</span>
+                        <span><i class="fa-regular fa-circle-check"></i> Know the number of loans services</span>
+                        <span><i class="fa-regular fa-circle-check"></i> Watch the growth of your investments</span>
+                        <span><i class="fa-regular fa-circle-check"></i> Fund your dream home</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12">
+                    <div class="coop-coa-image">
+                        <img src="assets/phone laptop.png" alt="coop-coa-image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="coop-security py-4 mb-5">
+        <div class="container">
+            <div class="row d-lg-flex align-items-center">
+                <!-- Left: Text -->
+                <div class="col-lg-6 col-sm-12 px-4 coop-security-title mb-4 mb-lg-0">
+                    <h4 class="fw-bold">Get Financial Freedom</h4>
+                </div>
+
+                <!-- Right: Logos -->
+                <div class="col-lg-6">
+                    <div class="security-image">
+                        <img src="assets/security 1.png" alt="Cowry" class="img-fluid">
+                        <p>
+                            Secured by 256 bits<br>
+                            SSL security<br>
+                            encryption
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coop-footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between footer">
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <img src="assets/logo/TRCN_SMCS_LOGO.png" alt="coop-logo" class="img-fluid logo">
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Company</h5>
+                    <ul class="list-unstyled">
+                        <li>About Us</li>
+                        <li>FAQs</li>
+                        <li>Press</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Product</h5>
+                    <ul class="list-unstyled">
+                        <li>Save</li>
+                        <li>Loan</li>
+                        <li>Invest</li>
+                        <li>Real Estate</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li>Terms of Use</li>
+                        <li>Privacy Policy</li>
+                        <li>Bye-Laws</li>
+                        <li>Security</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-location-dot"></i> 12, Oda Crescent, off Aminu Kano, Abuja</li>
+                        <li><i class="fa-regular fa-envelope"></i> trcncoop@trcn.com</li>
+                        <li><i class="fa-brands fa-facebook"></i> TRCN Cooperative</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +234 801 2345 678</li>
+                        <li><i class="fa-solid fa-paper-plane"></i> TRCN Coop</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row coop-footer-copyright text-center mt-5">
+                <p>
+                    The TRCN Staff Multipupose Cooperative society is strongly structured which guarantees<br>  
+                    financial and adminstrative trust among members who enjoy<br> 
+                    good services rendered by successive executives. 
+                </p>
+
+                <p class="mt-4">
+                    2025 TRCN COOP - RC 1207438
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

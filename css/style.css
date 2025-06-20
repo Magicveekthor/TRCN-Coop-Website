@@ -1,0 +1,1562 @@
+/* ==== POPPINS FONT ==== */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg: #f8f9fd;
+  --font-color: #262631;
+  --faded-login: #29166F66;
+  --faded-hero: #FFFFFF99;
+  --savings: #0B8C28;
+  --loans: #ed1c74;
+  --investments: #6a0dad;
+  --main-blue: #304daf;
+  --white: #ffffff;
+  --loan-field: #0000004d;
+  --grey-bg: #eeeeee;
+  --real-estate: #ff783c;
+
+
+  --faded-savings: rgba(11,140,40,0.03);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ==== ANIMATION SECTION ==== */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-slow {
+  animation: float-slow 3s ease-in-out infinite;
+}
+
+
+/* ==== HEADER SECTION ==== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; /* ensures it's above all content */
+  background-color: #fff; /* prevent transparency when scrolling */
+  box-shadow: 0px 4px 16px 5px rgba(112, 144, 176, 0.1);
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.nav-links .nav-link {
+  color: var(--main-blue);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.nav-links .nav-link.active {
+  color: var(--main-blue);
+  font-weight: 700;
+}
+
+.nav-links {
+  gap: 2rem;
+}
+
+.header-btn .signin-btn {
+  background-color: var(--grey-bg);
+  color: var(--main-blue);
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.header-btn .signup-btn {
+  background-color: var(--main-blue);
+  color: var(--white);
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.header-btn .signin-btn:hover,
+.header-btn .signup-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+.header .coop-header-icon {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background: rgba(106, 13, 173, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.header .coop-header-icon img {
+  width: 20px;
+  object-fit: contain;
+}
+
+.header .dropdown-item span {
+  margin-top: 6px;
+}
+
+/* Mega Dropdown */
+.custom-mega-menu {
+  width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Dropdown Box */
+.dropdown-box {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-box:hover {
+  background: #f0f8ff;
+  transform: translateY(-2px);
+}
+
+/* Icon */
+.dropdown-box .icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+/* Text */
+.dropdown-box h6 {
+  font-weight: 700;
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.dropdown-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Colored Headings */
+.savings-box h6 { color: #0b8c28; }
+.loans-box h6 { color: #e91e63; }
+.investment-box h6 { color: #6a1b9a; }
+.estate-box h6 { color: #ff6b00; }
+
+/* Active (bordered) */
+.dropdown-box.active {
+  border: 2px solid #008ce0;
+}
+
+
+@media (max-width: 992px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    justify-content: left;
+    /* align-items: center; */
+  }
+
+  .custom-dropdown .dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+}
+
+
+/* ==== HERO SECTION ==== */
+.bg-text {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.bg-text-blue {
+  color: var(--main-blue);
+}
+
+.sm-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.coop-home {
+  margin-top: 6.5rem;
+}
+
+.coop-home .get-started-btn {
+  background-color: var(--main-blue);
+  color: var(--white);
+  border-radius: 7px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+}
+
+.coop-home .get-started-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+@media (max-width: 991px) {
+  .intro-text {
+    text-align: center;
+  }
+
+  .bg-text {
+    font-size: 2rem;
+  }
+
+  .sm-text {
+    font-size: 0.9rem;
+  }
+
+  .get-started-btn {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px !important;
+  }
+
+  .intro-image img {
+    margin-top: 30px;
+    transform: scale(1.1);
+  }
+}
+
+
+
+/* ==== PARTNERS SECTION ==== */
+.coop-partners {
+  position: relative;
+  border-top: 2px solid var(--grey-bg);
+  border-bottom: 2px solid var(--grey-bg);
+  padding: 20px 0;
+}
+
+.coop-partners .partner-text h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.partner-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.partner-image img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .coop-partners .partner-text h4 {
+    text-align: center;
+  }
+}
+
+
+/* ==== SERVICES SECTION ==== */
+.coop-services {
+  padding-top: 0.5rem;
+}
+
+.coop-services .coop-services-big-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.coop-services .coop-services-small-text {
+  line-height: 3.2;
+}
+
+.coop-savings {
+  background: var(--faded-savings);
+  padding: 30px 20px;
+  border-radius: 7px;
+}
+
+/* Savings */
+.coop-savings .coop-savings-icon {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  background: rgba(11,140,40,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coop-savings .coop-savings-icon img {
+  width: 35px;
+  object-fit: contain;
+}
+
+.coop-savings .coop-savings-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--savings);
+}
+
+.coop-savings .coop-savings-descrip {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+}
+
+/* Loans */
+.coop-loans {
+  background: rgba(237, 28, 116, 0.03);
+  padding: 30px 20px;
+  border-radius: 7px;
+}
+
+.coop-loans .coop-loans-icon {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  background: rgba(237, 28, 116, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coop-loans .coop-loans-icon img {
+  width: 35px;
+  object-fit: contain;
+}
+
+.coop-loans .coop-loans-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--loans);
+}
+
+.coop-loans .coop-loans-descrip {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+}
+
+/* Investment */
+.coop-investment {
+  background: rgba(106, 13, 173, 0.03);
+  padding: 30px 20px;
+  border-radius: 7px;
+}
+
+.coop-investment .coop-investment-icon {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  background: rgba(106, 13, 173, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coop-investment .coop-investment-icon img {
+  width: 35px;
+  object-fit: contain;
+}
+
+.coop-investment .coop-investment-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--investments);
+}
+
+.coop-investment .coop-investment-descrip {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+}
+
+/* Real Estate */
+.coop-estate {
+  background: rgba(255, 120, 60, 0.03);
+  padding: 30px 20px;
+  border-radius: 7px;
+}
+
+.coop-estate .coop-estate-icon {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  background: rgba(255, 120, 60, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coop-estate .coop-estate-icon img {
+  width: 35px;
+  object-fit: contain;
+}
+
+.coop-estate .coop-estate-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--real-estate);
+}
+
+.coop-estate .coop-estate-descrip {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+}
+
+@media (max-width: 991px) {
+  .coop-services .coop-services-big-text {
+    font-size: 2rem;
+  }
+
+  .coop-services .coop-services-small-text {
+    font-size: 15px;
+  }
+
+  .coop-savings, .coop-loans, .coop-investment, .coop-estate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+
+
+/* ==== SERVICES SECTION ==== */
+.coop-vision {
+  background: var(--bg);
+}
+
+.coop-vision .coop-vision-button a{
+  background: rgba(48, 77, 175, 0.05);
+  border: 2px solid var(--main-blue);
+  padding: 10px 20px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: text;
+}
+
+.coop-vision .coop-vision-title h2{
+  font-size: 45px;
+}
+
+.coop-vision .coop-vision-block {
+  padding: 10px 20px;
+  border: 1px solid rgba(48, 77, 175, 0.5);
+  border-radius: 12px;
+  background-color: var(--white);
+  position: relative;
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%, 0 0); */
+}
+
+.coop-vision-block .feature-number {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: transparent; /* No fill */
+  -webkit-text-stroke: 1.5px #DCE0F0;
+}
+
+.coop-vision-block .feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.coop-vision-block .feature-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.coop-vision-block .feature-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.coop-vision-block p {
+  color: #444;
+  font-size: 13px;
+}
+
+.coop-vision-block.speed .feature-icon {
+  background-color: #fff0e6;
+}
+
+.coop-vision-block.speed {
+  transition: all 0.2s ease-in-out;
+}
+
+.coop-vision-block.speed:hover {
+  background-color: rgba(255, 120, 60, 0.03);
+}
+
+.coop-vision-block.trust .feature-icon {
+  background-color: rgba(106, 13, 173, 0.1);
+}
+
+.coop-vision-block.trust {
+  transition: all 0.2s ease-in-out;
+}
+
+.coop-vision-block.trust:hover {
+  background-color: rgba(106, 13, 173, 0.03);
+}
+
+.coop-vision-block.personalized .feature-icon {
+  background-color: rgba(11, 140, 40, 0.1);
+}
+
+.coop-vision-block.personalized {
+  transition: all 0.2s ease-in-out;
+}
+
+.coop-vision-block.personalized:hover {
+  background-color: var(--faded-savings);
+}
+
+.coop-vision-block.transparency .feature-icon {
+  background-color: rgba(237, 28, 116, 0.1);
+}
+
+.coop-vision-block.transparency {
+  transition: all 0.2s ease-in-out;
+}
+
+.coop-vision-block.transparency:hover {
+  background-color: rgba(237, 28, 116, 0.03);
+}
+
+
+
+/* ==== TEAM SECTION ==== */
+.coop-team .coop-team-title h4 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.coop-team .coop-team-title h4 span {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--main-blue);
+}
+
+.coop-team .coop-team-card {
+  width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coop-team-card .coop-team-image {
+  position: relative;
+  width: 100%;
+
+}
+
+.coop-team-card .coop-team-image .dots {
+  position: absolute;
+  width: 100px;
+  top: 0.1rem;
+  right: 1.2rem;
+  z-index: -1;
+}
+
+.coop-team-card .coop-team-image img {
+  width: 300px;
+}
+
+.coop-team-card h4 {
+  padding-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.coop-team .team-btn {
+  background-color: var(--main-blue);
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.coop-team .team-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+/* ==== COA SECTION ==== */
+.coop-coa {
+  background: var(--main-blue);
+  padding: 20px;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.coop-coa h4 {
+  font-size: 57px;
+  color: var(--white);
+}
+
+.coop-coa p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.coop-coa .coop-coa-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.coop-coa .enlarged-img {
+  transform: scale(1.2); /* Scale up by 20% */
+  transform-origin: center;
+}
+
+@media (max-width: 991px) {
+  .coop-coa h4 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
+
+  .coop-coa p {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 30px !important;
+  }
+
+  .coop-coa .coop-coa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px !important;
+  }
+
+  .coop-coa-image img {
+    margin-top: 20px;
+    transform: scale(1.1);
+  }
+
+}
+
+
+
+/* ==== COA SECTION ==== */
+.coop-security {
+  border-top: 2px solid var(--grey-bg);
+  border-bottom: 2px solid var(--grey-bg);
+}
+
+.coop-security .coop-security-title h4{
+  font-size: 40px;
+}
+
+.coop-security .security-image {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-items: center;
+}
+
+.coop-security .security-image img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .coop-security-title {
+    text-align: center;
+  }
+
+  .security-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .security-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* ==== FOOTER SECTION ==== */
+.coop-footer .logo{
+  width: 80px;
+}
+
+.coop-footer h5 {
+  margin-bottom: 30px;
+}
+
+.coop-footer .list-unstyled li {
+  margin-bottom: 20px;
+}
+
+.coop-footer .list-unstyled li i {
+  margin-right: 5px;
+}
+
+
+@media (max-width: 991px) {
+  .coop-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ================= SAVINGS PAGE ================= */
+.coop-savings-page {
+  margin-top: 6.5rem;
+}
+
+.coop-savings-page .intro-text h1 {
+  font-weight: 500;
+}
+
+.coop-savings-page .intro-text h1 .bg-text-green {
+  color: #0B8C28;
+  font-weight: 700;
+}
+
+.coop-savings-page .savings-banner {
+  width: 75%;
+}
+
+.coop-savings-page .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-savings-page .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-savings-content h4 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.coop-savings-content .coop-savings-card {
+  background: var(--bg);
+  padding: 20px 20px 0 20px;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coop-savings-card .coop-savings-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(11, 140, 40, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.coop-savings-card .coop-savings-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+.coop-savings-card .coop-savings-text h5 {
+  font-size: 2.35rem;
+  color: #222;
+  font-weight: 600;
+}
+
+
+.coop-savings-card .coop-savings-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.coop-savings-card .coop-savings-bg-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+.coop-savings-content .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-savings-content .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-partners.cp {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 991px) {
+  .coop-savings-page .savings-banner {
+    width: 100%;
+  }
+  .coop-savings-content h4 {
+    font-size: 32px;
+  }
+
+  .coop-savings-card .coop-savings-text h5 {
+    font-size: 1.8rem;
+  }
+
+  .coop-savings-card .coop-savings-bg-image img {
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .coop-savings-page .intro-image img {
+      transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+/* ================= INVESTMENT PAGE ================= */
+.coop-investment-page{
+  margin-top: 6.5rem;
+}
+
+.coop-investment-page .intro-text h1 {
+  font-weight: 500;
+}
+
+.coop-investment-page .intro-text h1 .bg-text-purple {
+  color: var(--investments);
+  font-weight: 700;
+}
+
+.coop-investment-page .investment-baner {
+  width: 75%;
+}
+
+.coop-investment-page .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-investment-page .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-investment-card {
+  background: var(--bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.coop-investment-card .coop-savings-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(106, 13, 173, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.coop-investment-card .coop-savings-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+.coop-investment-outline {
+  background: var(--bg);
+  padding: 70px 0;
+  margin: 100px 0;
+}
+
+.coop-investment-outline .intro-text {
+  padding: 0 15px;
+}
+
+.coop-investment-outline .bg-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.coop-investment-outline .sm-text {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.coop-investment-outline .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-investment-outline .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-investment-outline img {
+  width: 75%;
+}
+
+@media (max-width: 991px) {
+  .coop-investment-page .investment-baner {
+    width: 100%;
+  }
+
+  .coop-investment-outline img {
+    width: 100%;
+  }
+
+  .investment-img1,
+  .investment-img2 {
+    margin: 20px 0;
+  } 
+}
+
+
+
+
+
+
+
+
+/* ================= LOANS PAGE ================= */
+.coop-loans-page {
+  margin-top: 6.5rem;
+}
+
+.coop-loans-page .intro-text h1 {
+  font-weight: 500;
+}
+
+.coop-loans-page .intro-text h1 .bg-text-pink {
+  color: var(--loans);
+  font-weight: 700;
+}
+
+.coop-loans-page .investment-baner {
+  width: 75%;
+}
+
+.coop-loans-page .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-loans-page .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-loans-outline {
+  /* background: var(--bg); */
+  padding: 70px 0;
+  margin: 100px 0;
+}
+
+.coop-loans-outline .intro-text {
+  padding: 0 15px;
+}
+
+.coop-loans-outline .bg-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.coop-loans-outline .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-loans-outline .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-loans-outline img {
+  width: 75%;
+}
+
+.coop-loans-outline .coa-list  {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.faq-section {
+  background: transparent;
+  margin-bottom: 100px;
+}
+
+.faq-section .faq-section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 0.5rem;  
+  margin-bottom: 30px;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #212529;
+}
+
+@media (max-width: 991px) {
+  .coop-loans-page .investment-baner {
+    width: 100%;
+  }
+
+  .coop-loans-outline img {
+    width: 100%;
+  }
+
+  .loans-img1,
+  .loans-img2 {
+    margin: 20px 0;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+/* ================= REAL ESTATE PAGE ================= */
+.coop-estate-page {
+  margin-top: 6.5rem;
+}
+
+.coop-estate-page .intro-text h1 {
+  font-weight: 500;
+}
+
+.coop-estate-page .intro-text h1 .bg-text-pink {
+  color: var(--real-estate);
+  font-weight: 700;
+}
+
+.coop-estate-page .investment-baner {
+  width: 75%;
+}
+
+.coop-estate-page .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-estate-page .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+.coop-estate-content .coop-estate-card {
+  background: var(--bg);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.coop-estate-card .coop-estate-button {
+  background: transparent;
+  padding: 8px 29px;
+  border-radius: 7px;
+  font-size: 15px;
+  border: 1.5px solid var(--loan-field);
+  transition: all .2s ease-in-out;
+}
+
+.coop-estate-card .coop-estate-descrip {
+  font-size: 15px;
+}
+
+.coop-properties .property-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.coop-properties .property-card .img-fluid {
+  margin-bottom: 30px;
+}
+
+.coop-properties .property-card .coop-property-title {
+  font-size: 22px !important;
+  margin-bottom: 20px;
+}
+
+.coop-properties .property-card .coop-property-descrip {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.coop-properties .property-card .coop-property-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--real-estate);
+}
+
+.coop-properties .get-started-btn {
+  background: transparent;
+  padding: 12px 25px;
+  border-radius: 7px;
+  border: 1px solid var(--main-blue);
+  color: var(--main-blue);
+  transition: all .2s ease-in-out;
+}
+
+.coop-properties .get-started-btn:hover {
+  background: var(--main-blue);
+  color: var(--white);
+  border: none;
+}
+
+
+
+@media (max-width: 991px) {
+  .coop-loans-page .investment-baner {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= ABOUT-US PAGE ================= */
+.coop-about-page{
+  margin-top: 6.5rem;
+}
+
+.coop-about-page .mission-badge {
+  background-color: #eaf0fe;
+  color: #3b5bdb;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 7px;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.coop-about-page .mission-text h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.coop-about-page .byelaw-link {
+  color: #3b5bdb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.coop-about-page .about-banner {
+  width: 75%;
+}
+
+.coop-about-outline {
+  margin: 80px 0;
+}
+
+.coop-about-outline .intro-text {
+  padding: 0 15px;
+}
+
+.coop-about-outline .bg-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.coop-about-outline img {
+  width: 80%;
+}
+
+.coop-about-outline .coa-list  {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.coop-about-outline .read_more_link {
+  font-weight: 700;
+}
+
+.coop-about-outline #more-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+#more-text.show {
+  max-height: 500px;
+}
+
+.about-numbers .numbers-title {
+  font-size: 45px;
+}
+
+.about-numbers .coop-about-card {
+  background: var(--bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.about-numbers .coop-about-card .coop-about-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(7, 119, 93, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-numbers .coop-about-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about-numbers .coop-about-descrip {
+  letter-spacing: 1.2px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.about-numbers .coop-about-card .coop-about-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 991px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .coop-about-page .about-banner {
+    display: none;
+  }
+
+  .coop-about-outline img {
+    width: 100%;
+  }
+
+  .about-numbers .numbers-title {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ================= CONTACT-US PAGE ================= */
+.coop-contact {
+  margin-top: 6.5rem;
+}
+
+.coop-contact .contact-details .contact-title {
+  font-size: 50px;
+}
+
+.coop-contact .contact-questions ul,
+.coop-contact .contact-address ul {
+  padding-left: 0 !important;
+}
+
+.coop-contact .contact-questions ul li{
+  margin-bottom: 10px;
+}
+
+.coop-contact .contact-address ul li img{
+  width: 40px;
+  margin-right: 20px;
+}
+
+.coop-contact .coop-socialMedia {
+  margin-top: 60px;
+}
+
+.coop-contact .coop-socialMedia .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.coop-contact .coop-socialMedia .social-icons .b-box{
+  width: 57px;
+  height: 57px;
+  background: rgba(7, 119, 93, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coop-contact form {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 60px !important;
+}
+
+.coop-contact .coop-form {
+  border-radius: 100px;
+  padding: 25px !important;
+  margin-bottom: 35px;
+}
+
+.coop-contact textarea {
+  border-radius: 40px !important;
+}
+
+.coop-contact .get-started-btn {
+  background: var(--main-blue);
+  padding: 12px 25px;
+  border-radius: 100px;
+  border: none;
+  color: var(--white);
+  transition: all .2s ease-in-out;
+}
+
+.coop-contact .get-started-btn:hover {
+  background: transparent;
+  color: var(--main-blue);
+  border: 1px solid var(--main-blue);
+}
+
+
+@media (max-width: 991px) {
+  .coop-contact .contact-details {
+    text-align: center;
+  }
+
+  .coop-contact .coop-socialMedia .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .coop-contact form {
+    box-shadow: none;
+    padding: 30px !important;
+  }
+}
