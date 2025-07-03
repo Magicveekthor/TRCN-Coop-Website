@@ -702,30 +702,33 @@ a {
 }
 
 .coop-team .coop-team-card {
-  width: 350px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .coop-team-card .coop-team-image {
   position: relative;
-  width: 100%;
-
 }
 
 .coop-team-card .coop-team-image .dots {
   position: absolute;
-  width: 100px;
-  top: 0.1rem;
-  right: 1.2rem;
-  z-index: -1;
+  width: 120px;
+  top: 0;
+  right: 0;
+  z-index: 0; /* behind */
 }
 
-.coop-team-card .coop-team-image img {
-  width: 300px;
+.coop-team-card .coop-team-image img.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
 }
 
 .coop-team-card h4 {
@@ -734,6 +737,7 @@ a {
   font-weight: 600;
 }
 
+/* Button */
 .coop-team .team-btn {
   background-color: var(--main-blue);
   color: var(--white);
@@ -746,9 +750,29 @@ a {
   background-color: transparent;
   border: 1px solid var(--main-blue);
   color: var(--main-blue);
-  padding: 10px 30px;
-  border-radius: 10px;
 }
+
+
+.coop-team #more_team {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+#more_team.show {
+  max-height: 3000px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .coop-team-card .coop-team-image {
+    margin: 0 auto;
+  }
+}
+
+
+
+
 
 /* ==== COA SECTION ==== */
 .coop-coa {
