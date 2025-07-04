@@ -273,16 +273,26 @@
                     <div class="coop-team-card">
                         <div class="coop-team-image">
                             <img src="assets/dots.png" alt="coop-dot" class="dots">
-                            <img src="assets/team/Excos/Assistant General Secretary.jpg" class="img-fluid profile" alt="Coop-team">
+                            <img src="assets/team/Excos/P.R.O.png" class="img-fluid profile" alt="Coop-team">
                         </div>
-                        <h4>Mr. Simone Salmawa</h4>
-                        <p>Assistant General Secretary</p>
+                        <h4>Barr. Alexander Ngaddah</h4>
+                        <p>Public Relation Officer</p>
                     </div>
                 </div>
             </div>
 
 
             <div id="more_team" class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="coop-team-card">
+                        <div class="coop-team-image">
+                            <img src="assets/dots.png" alt="coop-dot" class="dots">
+                            <img src="assets/team/Excos/Assistant General Secretary.jpg" class="img-fluid profile" alt="Coop-team">
+                        </div>
+                        <h4>Mr. Simone Salmawa</h4>
+                        <p>Assistant General Secretary</p>
+                    </div>
+                </div>
                 <div class="col-lg-3 col-sm-12">
                     <div class="coop-team-card">
                         <div class="coop-team-image">
@@ -324,17 +334,6 @@
                         </div>
                         <h4>Mr. Afolabi Babatunde</h4>
                         <p>Assistant Treasurer</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-12">
-                    <div class="coop-team-card">
-                        <div class="coop-team-image">
-                            <img src="assets/dots.png" alt="coop-dot" class="dots">
-                            <img src="assets/team/Excos/P.R.O.png" class="img-fluid profile" alt="Coop-team">
-                        </div>
-                        <h4>Barr. Alexander Ngaddah</h4>
-                        <p>Public Relation Officer</p>
                     </div>
                 </div>
             </div>
