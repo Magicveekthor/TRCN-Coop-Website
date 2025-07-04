@@ -13,103 +13,9 @@
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header shadow-sm py-2">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo/TRCN_SMCS_LOGO.png" alt="trcn_staff_coop_logo" class="logo-img" />
-                </a>
+    <?php include 'includes/header.php' ?>
 
-                <!-- Toggler (mobile) -->
-                <button
-                    class="navbar-toggler ms-auto border-0"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarContent"
-                    aria-controls="navbarContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-               <!-- Collapsible content -->
-               <div class="collapse navbar-collapse" id="navbarContent">
-                   <!-- Nav links -->
-                   <ul class="navbar-nav mx-lg-auto nav-links text-center text-lg-start">
-                       <li class="nav-item">
-                           <a class="nav-link" href="index.html">Home</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="about-us.html">About Us</a>
-                       </li>
-
-                       <!-- Dropdown -->
-                       <li class="nav-item dropdown custom-dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Our Services
-                           </a>
-                           <div class="dropdown-menu custom-mega-menu p-4 float-slow" aria-labelledby="servicesDropdown">
-                                <div class="row gx-3 gy-4">
-                                    <div class="col-12 col-sm-6">
-                                        <a href="savings.html" class="dropdown-box savings-box">
-                                            <img src="assets/icons/savings.png" alt="savings icon" class="icon">
-                                            <div>
-                                                <h6>Savings</h6>
-                                                <p>Goal-oriented Savings</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <a href="loan.html" class="dropdown-box loans-box active">
-                                            <img src="assets/icons/loans.png" alt="loans icon" class="icon">
-                                            <div>
-                                                <h6>Loans</h6>
-                                                <p>Flexible Loans</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <a href="investment.html" class="dropdown-box investment-box">
-                                            <img src="assets/icons/investment.png" alt="investment icon" class="icon">
-                                            <div>
-                                                <h6>Investments</h6>
-                                                <p>Grow your Money</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <a href="real-estate.html" class="dropdown-box estate-box">
-                                            <img src="assets/icons/estate.png" alt="real-estate icon" class="icon">
-                                            <div>
-                                                <h6>Real Estate</h6>
-                                                <p>Goal-oriented Savings</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                           </div>
-                       </li>
-
-                       <li class="nav-item">
-                           <a class="nav-link" href="contact.html">Contact</a>
-                       </li>
-                   </ul>
-
-                   <!-- Right-aligned buttons -->
-                   <div class="d-flex flex-column flex-lg-row gap-3 header-btn mt-3 mt-lg-0 ms-lg-auto">
-                       <a href="#" class="btn signin-btn">Sign In</a>
-                       <a href="#" class="btn signup-btn">Get Started</a>
-                   </div>
-               </div>
-            </nav>
-        </div>
-    </header>
-
-
+    
     <section class="coop-loans-page container py-5">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0 hero-text">
@@ -306,70 +212,7 @@
     </section>
 
 
-    <section class="coop-footer mt-5">
-        <div class="container">
-            <div class="row d-flex justify-content-between footer">
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <img src="assets/logo/TRCN_SMCS_LOGO.png" alt="coop-logo" class="img-fluid logo">
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="fw-bold">Company</h5>
-                    <ul class="list-unstyled">
-                        <li>About Us</li>
-                        <li>FAQs</li>
-                        <li>Press</li>
-                        <li>Careers</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="fw-bold">Product</h5>
-                    <ul class="list-unstyled">
-                        <li>Save</li>
-                        <li>Loan</li>
-                        <li>Invest</li>
-                        <li>Real Estate</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="fw-bold">Legal</h5>
-                    <ul class="list-unstyled">
-                        <li>Terms of Use</li>
-                        <li>Privacy Policy</li>
-                        <li>Bye-Laws</li>
-                        <li>Security</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5 class="fw-bold">Contact</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fa-solid fa-location-dot"></i> 12, Oda Crescent, off Aminu Kano, Abuja</li>
-                        <li><i class="fa-regular fa-envelope"></i> trcncoop@trcn.com</li>
-                        <li><i class="fa-brands fa-facebook"></i> TRCN Cooperative</li>
-                        <li><i class="fa-brands fa-whatsapp"></i> +234 801 2345 678</li>
-                        <li><i class="fa-solid fa-paper-plane"></i> TRCN Coop</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row coop-footer-copyright text-center mt-5">
-                <p>
-                    The TRCN Staff Multipupose Cooperative society is strongly structured which guarantees<br>  
-                    financial and adminstrative trust among members who enjoy<br> 
-                    good services rendered by successive executives. 
-                </p>
-
-                <p class="mt-4">
-                    2025 TRCN COOP - RC 1207438
-                </p>
-            </div>
-        </div>
-    </section>
-
-
+    <?php include 'includes/footer.php' ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

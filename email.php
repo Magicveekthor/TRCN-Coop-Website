@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-function sendmessage($name, $email, $phone, $subject, $message){
+function sendmessage($name, $email, $phone, $subject,$message){
 	//Load Composer's autoloader
 	require 'vendor/autoload.php';
 
@@ -17,20 +17,20 @@ function sendmessage($name, $email, $phone, $subject, $message){
 		$mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
 		$mail->isSMTP();
 		$mail->SMTPKeepAlive = true; // Set mailer to use SMTP                                            //Send using SMTP
-		$mail->Host       = 'beautyforashesint.org';                     //Set the SMTP server to send through
+		$mail->Host       = 'trcncoop.ng';                     //Set the SMTP server to send through
 		$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-		$mail->Username   = 'control@beautyforashesint.org';                     //SMTP username
-		$mail->Password   = 'indbpffleedmswao';                               //SMTP password
+		$mail->Username   = 'info@trcncoop.ng';                     //SMTP username
+		$mail->Password   = 'ken5GGhqu*ry';                               //SMTP password
 		$mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
 		$mail->Port       = 465;                     //Enable verbose debug output
 
 		//Recipients
-		$mail->setFrom('control@beautyforashesint.org', 'Beauty For Ashes');
-		$mail->addAddress('Contact@beautyforashesint.org');     //Add a recipient
+		$mail->setFrom('info@trcncoop.ng', 'TRCN Staff Multipupose Cooperative Society');
+		$mail->addAddress('info@trcncoop.ng');     //Add a recipient
 
 		//Content
 		$mail->isHTML(true);                                  //Set email format to HTML
-		$mail->Subject = 'Message Notification';
+		$mail->Subject = 'Message Notification - TRCN Staff Multipurpose Cooperative Website';
 		$mail->Body = "
 	<!DOCTYPE html>
 	<html lang='en'>
@@ -298,7 +298,7 @@ function sendmessage($name, $email, $phone, $subject, $message){
 						<tr>
 							<td class='bg_white email-section'>
 								<div class='heading-section' style='text-align: center; padding: 0 30px;'>
-								<h2>New Message from Beauty For Ashes (Contact Us)</h2>
+								<h2>New Message for TRCN Staff Multipurpose Cooperative (Contact Us)</h2>
 								</div>
 								<table role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%'>
 									<tr>
@@ -371,13 +371,11 @@ function sendmessage($name, $email, $phone, $subject, $message){
 	</html>";
 
 	$mail->send();
+	return true; // RETURN true if email sends successfully
 
-	if($mail) {
-		header("Location: success.html");
-        exit(); // Ensure no further code is executed
-	}
 	} catch (Exception $e) {
 		echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+		return false; // RETURN false if email sending fails
 	}
 }
 
