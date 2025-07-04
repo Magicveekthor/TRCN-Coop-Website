@@ -41,7 +41,7 @@
                         <li><i class="fa-solid fa-location-dot"></i> 12, Oda Crescent, off Aminu Kano, Abuja</li>
                         <li><i class="fa-regular fa-envelope"></i> info@trcncoop.ng</li>
                         <li><i class="fa-brands fa-facebook"></i> TRCN Cooperative</li>
-                        <li><i class="fa-brands fa-whatsapp"></i> +234 801 2345 678</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +234 903 890 4404</li>
                         <li><i class="fa-solid fa-paper-plane"></i> TRCN Coop</li>
                     </ul>
                 </div>
