@@ -1556,6 +1556,128 @@ a {
 
 
 
+/* ================= NEWS PAGE ================= */
+.coop-news {
+  margin-top: 4rem;
+  background: var(--bg);
+}
+
+
+.coop-news .news-header {
+  background: var(--main-blue);
+  color: var(--white);
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+}
+
+.news-card .news-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.news-card .news-image img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.news-card .news-details {
+  background: var(--white);
+  padding: 20px 20px 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-height: 360px; /* Try increasing this */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-card .news-details p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.news-details .news-date {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.news-details .news-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.news-details .get-started-btn {
+  align-self: flex-start; /* stops it from stretching */
+  width: auto;
+  padding: 12px 25px;
+  border-radius: 7px;
+  background: var(--main-blue);
+  color: var(--white);
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+}
+
+.news-details .get-started-btn:hover {
+  background: transparent;
+  color: var(--main-blue);
+  border: 1px solid var(--main-blue);
+}
+
+
+
+
+
+/* ================= NEWS DETAILS PAGE ================= */
+.coop-news-details {
+  margin-top: 4rem;
+}
+
+.coop-news-details .get-started-btn {
+  padding: 12px 25px;
+  border-radius: 7px;
+  background: var(--main-blue);
+  color: var(--white);
+  margin: 20px 0;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+}
+
+.coop-news-details .get-started-btn:hover {
+  background: transparent;
+  color: var(--main-blue);
+  border: 1px solid var(--main-blue);
+}
+
+.news-page-details .news-image {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.news-page-details .news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-body {
+  line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
