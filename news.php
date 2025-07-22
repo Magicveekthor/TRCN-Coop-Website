@@ -76,7 +76,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="news-card">
                         <div class="news-image">
-                            <img src="assets/news/voting.jpg" alt="coop-news-picture" class="img-fluid">
+                            <img src="assets/news/status-update.jpg" alt="coop-news-picture" class="img-fluid">
                         </div>
 
                         <div class="news-details">
