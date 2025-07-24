@@ -345,6 +345,94 @@
     </section>
 
 
+    <section class="coop-news home py-5">
+        <div class="news-header mt-5">
+            <h2 class="text-center">News and Announcements</h2>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/news/voting.jpg" alt="coop-news-picture" class="img-fluid">
+                        </div>
+
+                        <div class="news-details">
+                            <div class="news-date">
+                                <i class="fa-solid fa-calendar"></i> 
+                                <span>July 16, 2025</span>
+                            </div>
+
+                            <p class="news-title mt-4">TRCN Cooperative Elections</p>
+
+                            <p>
+                                The TRCN Cooperative elections are coming up on the 18th of July 2025. 
+                                The election guidelines are designed to enable contestants and voters 
+                                participate appropriately in order...
+                            </p>
+
+                            <a href="news.php" class="get-started-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/news/20th-anniversary.jpg" alt="coop-news-picture" class="img-fluid">
+                        </div>
+
+                        <div class="news-details">
+                            <div class="news-date">
+                                <i class="fa-solid fa-calendar"></i> 
+                                <span>April 07, 2025</span>
+                            </div>
+
+                            <div class="news-text">
+                                <p class="news-title mt-4">TRCN Cooperative 20th Anniversary</p>
+                                <p>
+                                    This is to notify all members that the Annual General Meeting (AGM) of the cooperative has been scheduled to hold as follows:<br>
+                                    Date: Tuesday 15th April 2025<br>
+                                    Time: 9:00Am Prompt...
+                                </p>
+                            </div>
+                            <a href="news.php" class="get-started-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <img src="assets/news/status-update.jpg" alt="coop-news-picture" class="img-fluid">
+                        </div>
+
+                        <div class="news-details">
+                            <div class="news-date">
+                                <i class="fa-solid fa-calendar"></i> 
+                                <span>January 09, 2025</span>
+                            </div>
+
+                            <p class="news-title mt-4">Status Update on Proposed Housing Project</p>
+
+                            <p>
+                                As already known to the generality of the members, this administration 
+                                is keen on delivering affordable housing to interested and qualified 
+                                members of the cooperative...
+                            </p>
+
+                            <a href="news.php" class="get-started-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+           
+        </div>
+    </section>
+
+
     <section class="coop-coa">
         <div class="container">
             <div class="row py-4">
